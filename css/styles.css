@@ -1,0 +1,276 @@
+/* Фон для компьютеров и планшетов */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,400&display=swap');
+body{
+    background: url(../images/bg.png);
+    background-attachment: fixed;
+    font-family: 'Bitter', serif;
+    background-size: cover;
+}
+
+/* Фон для телефонов */
+@media only screen and (max-width : 768px) {
+    body {
+    background-image: url(../images/bg_mobile.png);
+    background-attachment: fixed;
+    }
+  }
+
+/* Информация сверху (navbar) */
+.info{
+    list-style: none;
+    color: rgb(175, 183, 187);
+    padding-left: 0;
+}
+
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+.info span{
+    color: rgb(30, 192, 18);
+}
+
+.empty{
+    width: 100%;
+    height: 110px;
+}
+
+.myNav li{
+    padding: 0;
+    font-size: 15px;
+    margin-left:0;
+    width: 100%;
+}
+/*О сервере*/
+.about h1{
+    width: 95%;
+    font-size: 23px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin: 25px auto;
+}
+
+.about h2{
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.about h3{
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about p, li{
+    text-align: justify;
+    font-size: 16px;
+    padding-top: 15px;
+}
+/* Настройка текста слайдера */
+.about h10{
+    text-align: justify;
+    font-size: 16px;
+    padding: 20px;
+    
+}
+.about h11{
+    font-size: 20px;
+}
+
+.about h6{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+/* Увеличение размера иконок соц-сетей */
+.icon_social_network{
+    font-size: 35px;
+    letter-spacing: 12px;
+}
+
+/* Отступы между абзацами */
+.about ol{
+    margin-top: 10px;
+}
+
+
+.about h5{
+    transform: translate(0, -38px);
+    padding: 20px;
+}
+
+/* Анимация появления текста */
+.animRow{
+    transform: translateY(-150%);
+    animation: anim 1s forwards;
+}
+
+@keyframes anim{
+    0%{transform: translateX(150%);}
+    100%{transform: translateY(0);}
+}
+
+.animRow2{
+    transform: translateY(-150%);
+    animation: anim2 2s forwards;
+}
+
+@keyframes anim2{
+    0%{transform: translateX(150%);}
+    100%{transform: translateY(0);}
+}
+
+/* Модификации */
+.title h2{
+    margin: 100px auto 15px;
+    font-size: 23;
+    letter-spacing: 2px;
+}
+
+/* Кнопки */
+.glow-on-hover {
+    width: 170px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    
+}
+
+/* Кнопка модов */
+.glow-on-hover-gal{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 5px;
+    
+}
+
+.glow-on-hover:before, .glow-on-hover-gal:before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active, .glow-on-hover-gal:active{
+    color: #000
+}
+
+.glow-on-hover:active:after, .glow-on-hover-gal:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before, .glow-on-hover-gal:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after, .glow-on-hover-gal:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Подвал сайта */
+.beta_test{
+    margin-top: -4px;
+    margin-left: -39px;
+}
+
+footer{
+    padding: 30px 0;
+    font-size: 16px;
+    margin-top: 28px;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .f_btn{
+    width: 50%;
+    height: 50px;
+    margin: 50px auto;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.f_btn:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 3s ease-in-out 0.05s infinite;
+}
+   
+@keyframes movingFlare {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+}

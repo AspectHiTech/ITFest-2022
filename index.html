@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="shortcut icon" href="images/minecraft-icon.png" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>IT-Fest 2022</title>
+</head>
+<body>
+<!--навигация-->
+<div class="container-fluid fixed-top bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark myNav">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+        <ul class="mb-2 mb-lg-0 info">
+          <li><span>IP: </span> 000.000.000.000 </li>
+          <li><span>Версия:</span> 1.12.2</li>
+          <li><span>Игроков:</span>274 из 1500</li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#info">О сервере</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mods">Моды</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#players">Рейтинг Игроков</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Контакты</a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="empty" id="info"></div>
+<!--О сервере-->
+<div class="container about" > 
+  <div class="row">
+    <div class="col-12 text-white animRow">
+      <h2 class="text-center"> Приветствуем на </h2>
+      <h1 class="text-center text-uppercase">первом сервере Minecraft для технического творчества при поддержке ФЦДО </h1>
+      <h3 class="text-center"> Особенности сервера: </h3>
+    </div>
+  </div>
+<div>
+</div>
+
+<div class="row">
+  <div class="col-12 text-white animRow2">
+    <ol>
+      <li>Карта игровой зоны соответствует карте территорий Российской Федерации и включает все регионы Страны.
+      Каждый игровой регион будет содержать определенный тип ресурсов, а участникам игрового сервера будет 
+      необходимо налаживать торговые отношения и выстраивать договоренности для взаимовыгодного 
+      сотрудничества </li>
+      <li>Игровые модификации добавляют в игру новые технологические элементы и позволяют участникам находить 
+      новые типы ресурсов, необходимые для развития важных отраслей современной жизни (энергетика, космонавтика,
+      биологические виды новых сельскохозяйственных культур и многое другое) </li>
+      <li>Команда организаторов систематически проводит образовательные и развлекательные события (Ивенты): 
+      кейскарты, jumping пазлы, королевские битвы, командные головоломки и многое другое </li>
+    </ol>
+
+    <p>В 2023 году сервер откроет свои двери для всех желающих, но уже сейчас самые преданные любители
+    кубической песочницы могут подать заявку на beta-тестирование. Торопитесь!</p>
+  </div>
+</div>
+
+<!--Модификации-->
+<div class="container" id="mods">
+  <div class="row title">
+    <div class="col-12 text-white text-uppercase text-center">
+      <h2>модификации</h2>
+    </div>
+  </div>
+</div>
+<!-- Весь свайпер -->
+<meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Подключение css свайпера -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Настройки свайпера -->
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 320px;
+        height: 680px;
+        align-items: center;
+	      justify-content: space-between;
+	      background-color:#1e1e26;
+      	border-radius: 10px;
+      	box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+	      display: flex;
+      	flex-direction: column;
+	      box-sizing: border-box;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+
+  <body>
+    <!-- Свайпер -->
+    <div class="swiper mySwiper text-white">
+      <!-- 1 -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/mod1.png" />
+          <h6 class="card-title ">Dynamic Trees [1.16.5] [1.12.2] [1.11.2] [1.10.2] <br>
+          </h6>
+          <h11>
+            <center>Описание</center>
+          </h11>
+          <h10  class="card-text">
+          С Dynamic Trees изменится рост деревьев, он станет естественнее и заметнее, теперь они будут
+          выростать уникальными, смогут расти вокруг препятствий, а их размер и скорость роста будут 
+          зависеть от биома.
+        </h10>
+          <a href="https://minecraft-inside.ru/mods/58305-dynamic-trees.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 2 -->
+        <div class="swiper-slide">
+          <img src="images/mod2.png" />
+          <h6 class="card-title">Survive [1.18.2] [1.17.1] [1.16.5] [1.15.2] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            Survive - мод на реалистичность, он введет два новых параметра - жажда и температура. 
+            Для сохранения тепла тела вы можете одеть шерстяной сет, а для избежания
+            обезвоживания подойдет очищенная вода.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/127238-survive.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 3 -->
+        <div class="swiper-slide">
+          <img src="images/mod3.jpg" />
+          <h6 class="card-title">Macaw's Furniture [1.18.2] [1.16.5] [1.15.2] [1.12.2] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            Модификация добавит мебель в ванильном стиле с качественными моделями.
+            На данный момент мод содержит 45 предметов, но вы сможете совмещать мебель между собой, 
+            создавая новые варианты.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/121781-macaws-furniture.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 4 -->
+        <div class="swiper-slide">
+          <img src="images/mod4.png" />
+          <h6 class="card-title">Charm [1.18.2] [1.17.1] [1.16.5] [1.12.2] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            Модификация, которая внесет 50 небольших нововведений, среди которых: 
+            деревенские декорации, бочки, заброшенные ящики с лутом,  новые текстуры для 
+            волков и кошек, а также интересные изменения механик в игре.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/93847-charm.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 5 -->
+        <div class="swiper-slide">
+          <img src="images/mod5.png" />
+          <h6 class="card-title">Carry On [1.18.2] [1.17.1] [1.16.5] [1.12.2] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            Модификация, которая позволит переносить предметы
+            (печь, сундук, механизмы). Нужно зажать Shift и нажать правой кнопкой мыши по 
+            объекту. В новых версиях мода, можно переносить не только блоки, но и животных.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/57857-carry-on.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 6 -->
+        <div class="swiper-slide">
+          <img src="images/mod6.jpg" />
+          <h6 class="card-title">WildNature [1.15.2] [1.14.4] [1.12.2] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            WildNature добавит новый тип генерации мира, который добавит 65 новых биомов.
+            В этих биомах будут генерироваться новые деревья и растения. Биомы будут реалистичными, новыми и необычными.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/95725-wildnature.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 7 -->
+        <div class="swiper-slide">
+          <img src="images/mod7.png" />
+          <h6 class="card-title">Realistic Torches [1.16.5] [1.15.2] [1.12.2] [1.7.10] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            Модификация, которая сделает факелы реалистичнее - теперь их нужно будет поджигать, и гореть они будут только определенное время.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/20686-realistic-torches.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 8 -->
+        <div class="swiper-slide">
+          <img src="images/mod8.png" />
+            <h6 class="card-title">Paintings ++ [1.18.1] [1.17.1] [1.16.5] [1.12.2] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            Данная модификация добавляет в игру более 300 новых картин разных размеров, которые помогут вам 
+            украсить и оживить ваши постройки.
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/41659-paintings-plus-plus.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+        <!-- 9 -->
+        <div class="swiper-slide">
+          <img src="images/mod9.jpg" />
+            <h6 class="card-title">Zoocraft Discoveries [1.12.2] [1.7.10] <br>
+            </h6>
+            <h11>
+              <center>Описание</center>
+            </h11>
+            <h10 class="card-text">
+            С Zoocraft Discoveries в игре появятся различные животные с красивыми трехмерными моделями, а также новые виды блоков
+            </h10>
+            <a href="https://minecraft-inside.ru/mods/63942-zoocraft-discoveries.html" class="btn btn-primary glow-on-hover" target="_blank">Узнать больше</a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--Свайпер JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Настройка свайпера -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+
+
+<!--Таблица рейтингов игроков-->
+<div class="container text-white" id="players">
+  <div class="row title">
+    <div class="col-12 text-white text-center text-uppercase">
+      <h2>Рейтинг игроков</h2>
+    </div>
+  </div>
+</div>
+
+<!--Таблица-->
+<iframe referrerpolicy="no-referrer-when-downgrade " height="600px" width="100%" style="border:none; " 
+src="https://view-awesome-table.com/-MzoEn9T56hH-3NIavai/view"></iframe>
+
+</div>
+
+<!--Галерея-->
+<div class="container" id="gallery">
+  <div class="row title">
+    <div class="col-12 text-white text-uppercase text-center">
+      <h2>Галерея</h2>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="images/1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      title="Автор: Казарян А.А."
+    />
+
+    <img
+      src="images/2.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      title="Автор: Шим К.Д."
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/3.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      title="Автор: Горюнов В.В."
+    />
+
+    <img
+      src="images/4.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      title="Автор: Ванда И.В."
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="images/5.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      title="Автор: Мисаутова С.Ф. "
+    />
+
+    <img
+      src="images/6.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      title="Автор: Arthas (папич)"
+    />
+  </div>
+</div>
+
+<!--Кнопки-->
+  <div class="d-grid">
+    <button class="btn btn-dark m-3 text-uppercase glow-on-hover-gal"> Обновить галлерею</button>
+  </div>
+</div>
+
+<!--Контакты-->
+<footer class="bg-dark text-white" id="contacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>
+          Команда-организатор сервера: Федеральное государственное
+          бюджетное образовательное учреждение дополнительного образования
+          «Федеральный центр дополнительного образования и организации
+          отдыха и оздоровления детей» (ФГБОУ ДО ФЦДО)
+        </p>
+        <div class="container icon_social_network">
+          <a href="vk.com/FEDCDOMinecraft"><i class="fa-brands fa-vk"></i></a>
+        
+          <a href="t.me/FEDCDOMinecraft"><i class="fa-brands fa-telegram"></i></a>
+        
+          <a href="https://discord.gg/8kpuuzG4jU"><i class="fa-brands fa-discord"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center beta_test">
+    <div class="col-12 m-3">
+      <a href="registration.html" target="_blank" class="btn btn-dark m-3 text-uppercase f_btn ">Хочу в БЕТА-test</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+</body>
+</html>

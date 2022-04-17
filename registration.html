@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registrarion.css">
+    <link rel="shortcut icon" href="images/registration-icon.png" type="image/x-icon">
+    <title>Регистрация</title>
+</head>
+<body>
+    <!-- Регистрация -->
+    <div class="login-box">
+        <h2>Зарегестрироваться</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required=""></input>
+            <label>ФИО</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="contactsForm" name="contactsForm" required=""></input>
+            <label>Эл. Почта</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="phone" name="" required=""></input>
+            <label>Номер телефона</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required=""></input>
+            <label>Опыт игры в  Minecraft</label>
+          </div>
+  
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Отправить
+          </a>
+        </form>
+      </div>
+
+      <!-- Подключение Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- Добавление маски для телефона -->
+      <script src="./js/jquery.maskedinput.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $("#phone").mask("+7 (999) 999-9999");
+        });
+      </script>
+      <!-- Добавление маски для почты -->
+      <script src="/js/inputmask.js"></script>
+      <script>
+        $(document).ready(function() {   
+          $("#contactsForm").inputmask("email")
+        });
+      </script>
+</body>
+</html>
