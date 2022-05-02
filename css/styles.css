@@ -13,7 +13,22 @@ body{
     background-image: url(../images/bg_mobile.png);
     background-attachment: fixed;
     }
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .slider-mobile{
+        visibility: hidden;
+        display: none;
+    }
+}
+
 
 /* Информация сверху (navbar) */
 .info{
@@ -25,13 +40,12 @@ body{
 html{
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    
 }
 
 body{
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
   }
 
 .info span{
@@ -69,27 +83,40 @@ body{
     text-transform: uppercase;
 }
 
+.about h4{
+    font-size: 25px;
+    padding: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .about p, li{
     text-align: justify;
     font-size: 16px;
     padding-top: 15px;
 }
 /* Настройка текста слайдера */
-.about h10{
+.text-1{
+    font-size: 20px;
+    padding-left: 5px;
     text-align: justify;
+}
+
+.card-text{
     font-size: 16px;
     padding: 20px;
-    
-}
-.about h11{
-    font-size: 20px;
+    text-align: justify;
 }
 
 .about h6{
     padding-left: 20px;
     font-size: 20px;
 }
-
+.carousel-inner{
+    width: 90%;
+    display:block;
+    margin:auto;  
+}
 /* Увеличение размера иконок соц-сетей */
 .icon_social_network{
     font-size: 35px;
@@ -128,6 +155,16 @@ body{
     100%{transform: translateY(0);}
 }
 
+.transparency{
+    opacity: 0;
+    transform: translateY(40px);
+    transition-property: opacity, transform;
+    transition-duration: 700ms;
+}
+.transparency.appearance{
+    transform: translateY(0);
+    opacity: 1;
+}
 /* Модификации */
 .title h2{
     margin: 100px auto 15px;
@@ -146,12 +183,18 @@ body{
     cursor: pointer;
     position: relative;
     z-index: 0;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
-
+/* Кнопка модов(условия) */
+.d-grid{
+    display: flex;
+    justify-items:center ;
+}
 /* Кнопка модов */
-.glow-on-hover-gal{
+.glow-on-hover-gal {
+    width: 70%;
+    height: 40px;
     border: none;
     outline: none;
     color: #fff;
@@ -213,8 +256,9 @@ body{
 
 /* Подвал сайта */
 .beta_test{
-    margin-top: -4px;
-    margin-left: -39px;
+    width: 96%;
+    margin-top: 10px;
+    text-align: center;
 }
 
 footer{
@@ -225,6 +269,14 @@ footer{
     padding-left: 0;
 }
 
+.btn_text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 footer .f_btn{
     width: 50%;
     height: 50px;
